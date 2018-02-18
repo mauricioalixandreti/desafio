@@ -13,12 +13,12 @@
 <p>204 (No Content) - for PUT, e DELETE</p>
 <p>400 (BAD_REQUEST) Outro Erros</p>
 
-<h3>Exemplso de Consultas via GET</h3>
+<h3>Exemplos de Consultas via GET</h3>
 <p><strong>
 Buscar clientes por pagina a partir da pagina 5:</strong></p>
 
-<p>page=Pagina Requerida</p>
-<p>size=Qunatidade de Itens por Pagina(default = 10)</p>
+<p>page=Página Requerida</p>
+<p>size=Quantidade de itens por pagina(default = 10)</p>
 <p>http://localhost:8080/api/clientes?page=1&size=5</p>
 
 <p><strong>Buscar Paginada com Links (primeiro, próximo, anteriro e última</strong></p>
@@ -30,7 +30,10 @@ Buscar clientes por pagina a partir da pagina 5:</strong></p>
 <p><strong>Buscar Cliente por Identificador::</strong></p>
 <p>http://localhost:8080/api/clientes/1</p>
 
-<h3>Exemplso de Consultas via POST, DELETE</h3>
+<p><strong>Buscar Cliente pro CPFCNPJ</strong></p>
+<p>http://localhost:8080/api/clientes/search/documento?cpfcnpj=7894900011517</p>
+
+<h3>Exemplos de Consultas via POST, DELETE</h3>
 <p><strong>Excluir Cliente (Http: DELETE)</strong></p>
 <p>http://localhost:8080/api/clientes/1(id)</p>
 <p><strong>Salvar ou Atualizar Cliente (POST). Definir o content type do body como JSON no cliente rest </strong></p>

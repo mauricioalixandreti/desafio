@@ -23,5 +23,8 @@ public interface ClienteRepository extends CrudRepository<Cliente, Long> {
 	@Override
 	public Cliente findOne(Long id);
 	
+	@RestResource(path = "documento", rel = "documento")
+	Cliente findByCpfcnpj(@Param("cpfcnpj") String cpfcnpj);
+	
 	
 }
