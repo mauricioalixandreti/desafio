@@ -13,11 +13,12 @@ import org.springframework.http.MediaType;
 import br.com.conductor.desafio.model.Cliente;
 
 @SpringBootApplication
-@EnableAutoConfiguration  
+@EnableAutoConfiguration
 @ComponentScan({ "br.com.conductor"})
 public class DesafioApplication {
 
-    public static void main(String[] args) {
+	
+	public static void main(String[] args) {
         SpringApplication.run(DesafioApplication.class, args);
     } 
     
@@ -28,9 +29,13 @@ public class DesafioApplication {
         public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
           config.setBasePath("/api");
           config.setDefaultMediaType(MediaType.APPLICATION_JSON); 
-          config.exposeIdsFor(Cliente.class);          
+          config.exposeIdsFor(Cliente.class);  
+          
         }
       };
     }
+    
+
+     
    
 }

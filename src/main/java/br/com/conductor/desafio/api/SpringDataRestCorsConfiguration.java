@@ -10,7 +10,7 @@ public class SpringDataRestCorsConfiguration  extends RepositoryRestConfigurerAd
 	  @Override
 	  public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
-	    config.getCorsRegistry().addMapping("/clientes/**")
+	    config.getCorsRegistry().addMapping("api/clientes/**")
 	      .allowedOrigins("http://localhost:8080")
 	      .allowCredentials(false).maxAge(3600);
 	  }

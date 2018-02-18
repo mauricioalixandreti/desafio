@@ -2,9 +2,6 @@ package br.com.conductor.desafio.api;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
-import java.util.Set;
-
-import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.conductor.desafio.model.Cliente;
 import br.com.conductor.desafio.view.ErroView;
 
 @RestController

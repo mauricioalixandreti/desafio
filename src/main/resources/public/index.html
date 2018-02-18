@@ -1,0 +1,40 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instruções Básicas</title>  
+</head>
+<body>
+
+<h3>Códigos de Retorno HTTP</h3>     
+
+<p>200 (OK) - GET requests.</p>
+<p>201 (Created) - POST e PUT salvar novos cliente</p>
+<p>204 (No Content) - for PUT, e DELETE</p>
+<p>400 (BAD_REQUEST) Outro Erros</p>
+
+<h3>Exemplso de Consultas via GET</h3>
+<p><strong>
+Buscar clientes por pagina a partir da pagina 5:</strong></p>
+
+<p>page=Pagina Requerida</p>
+<p>size=Qunatidade de Itens por Pagina(default = 10)</p>
+<p>http://localhost:8080/api/clientes?page=1&size=5</p>
+
+<p><strong>Buscar Paginada com Links (primeiro, próximo, anteriro e última</strong></p>
+<p>http://localhost:8080/api/clientes?page=1&size=3</p>
+
+<p><strong>Busca por nome iniciando com parametro[nome]:</strong></p>
+<p>http://localhost:8080/api/clientes/search/noneStartsWith?nome=G</p>
+
+<p><strong>Buscar Cliente por Identificador::</strong></p>
+<p>http://localhost:8080/api/clientes/1</p>
+
+<h3>Exemplso de Consultas via POST, DELETE</h3>
+<p><strong>Excluir Cliente (Http: DELETE)</strong></p>
+<p>http://localhost:8080/api/clientes/1(id)</p>
+<p><strong>Salvar ou Atualizar Cliente (POST). Definir o content type do body como JSON no cliente rest </strong></p>
+<p>http://localhost:8080/api/clientes</p>
+
+</body>
+</html>
